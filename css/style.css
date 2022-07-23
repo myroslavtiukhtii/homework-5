@@ -1,131 +1,159 @@
-/*Reviewer*/
-
 * {
-    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    font-weight: 400;
     line-height: 1;
+    box-sizing: border-box;
 }
 
+body {
+    background-color: #3B3F45;
+}
 
-header {
+.container {
+    max-width: 534px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    min-height: 82px;
+    padding: 15px 0 12px;
     background-color: #4A4F56;
+    margin-bottom: 20px;
 }
 
 .header .container {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 19px 270px 35px 247px;
-    height: 82px;
 }
 
-.body .header span {
+.header h1 {
     font-size: 24px;
-    line-height: 28px;
-    font-weight: bold;
+    font-weight: 700;
+    text-align: center;
+    color: #FF8984;
+    margin-bottom: 5px;
+}
+
+.header span {
     color: #FF8984;
 }
 
-.body .header p {
-    font-size: 16px;
-    font-weight: 400;
-    color: #FF8984;
+.main {
+    min-height: calc(100vh - 82px);
+    padding: 20px 0 45px;
 }
 
-main {
-    background-color: #3B3F45;
-    min-height: 100vh;
+.list {
+    margin-bottom: 45px;
 }
 
-.main .container {
-    position: relative;
+.list li {
+    background-color: #88839E;
+}
+
+.list li:nth-last-of-type(2n+1) {
+    background-color: #7A7593;
+}
+
+.list li:hover {
+    background-color: #625E77;
+}
+
+.list li:hover label {
+    border-color: #fff;
+}
+
+.list label {
+    min-height: 45px;
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 20px 130px 135px 129px;
+    cursor: pointer;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    padding: 5px 12px;
 }
 
-li {
-    outline: 1px solid #a09fa3;
-    width: 534px;
-    height: 45px;
-    background-color: #88839E;
-    color: #FFF;
+.list label input {
+    margin: 0 16px 0 0;
+    appearance: none;
 }
 
-li:nth-child(even) {
-    background-color: #7A7593;
-  }
-
-li:hover {
-    background-color: #625E77;
-    border-top: 2px solid #e5e0f4;
-    border-bottom: 2px solid #e5e0f4;
-    transition: all .1s ease-in;
+.list label input::before {
+    content: '';
+    width: 19px;
+    height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    background-color: #fff;
 }
 
-li label {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
+.list label input:checked::before {
+    content: "\f00c";
 }
 
-li span {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 13px;
-    vertical-align: 2px;
-}
-
-input[type=checkbox]:checked + label.strikethrough {
-    text-decoration: line-through; 
+.list label input:checked + .description .text {
     color: #9B96AC;
 }
 
-input[type=checkbox] {
-    margin: 11px 3px 13px 10px;
-}
-
-
-.container input {
-    height: 19px;
-    width: 19px;
-    transform: translateY(5px);
-    border-radius: 1px;
-    accent-color: rgb(255, 252, 252);
-  }
-
-
-.main .container p {
-    padding: 12px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
+.list label input:checked + .description::before {
+    content: '';
     position: absolute;
-    outline: 1px solid #a09fa3;
-    width: 534px;
-    height: 45px;
-    background-color: #4A4F56;
-    color: #FF8984;
-    text-align: center;
-    transform: translateY(300px);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 1px;
+    background-color: #9B96AC;;
 }
 
+.description {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
+.text {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+}
 
+.text span {
+    font-size: 11px;
+    margin-left: 5px;
+}
 
+.message {
+    min-height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #FF8984;
+    background-color: #4A4F56;
+}
 
+@media only screen and (min-width: 568px) {
 
+    .container {
+        padding: 0;
+    }
 
-
-
-
-
+}
+    
 
 
 
