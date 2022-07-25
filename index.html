@@ -5,57 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Shopping List</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <title>CSS Dinner shoping list</title>
 </head>
-<body class="body">
+<body>
     <header class="header">
         <div class="container">
-            <span>CSS Dinner Shopping List</span>
-            <p>Let's go to the mall!</p>
+            <h1>CSS Dinner shoping list</h1>
+            <span>Let’s go to the mall!</span>
         </div>
     </header>
-    <main class="main">
-        <div class="container">
-            <ul class="list">
-                <li>
-                    <input type="checkbox" name="label-1">
-                <label for="label-1" class="strikethrough">
-                    A lot of pickles <span>(for the next lessons about CSS)</span>
-                </label>
-                </li>
-                <li><input type="checkbox" name="label-2">
-                <label for="label-2" class="strikethrough">
-                    10 apples <span>(for more CSS manipulations)</span>
-                </label>
-                </li>
-                <li><input type="checkbox" name="label-3">
-                <label for="label-3" class="strikethrough">
-                    20 oranges <span>(because they are awesome)</span>
-                </label>
-                </li>
-                <li>
-                    <input type="checkbox" name="label-4">
-                <label for="label-4" class="strikethrough">
-                    13 plates <span>(hm... they always dissapear)</span>
-                </label>
-                </li>
-                <li>
-                <input type="checkbox" name="label-5">
-                <label for="label-5" class="strikethrough">
-                    15 bentos
-                </label>
-                </li>
-                <li>
-                <input type="checkbox" name="label-6">
-                <label for="label-6" class="strikethrough">
-                    1 bottle of Sake <span>(for my friends)</span>
-                </label>
-                </li>
-            </ul>
-            <p>Bon appetit :)</p>
-        </div>
-
+    <main>
+        <section class="shopping-list">
+            <div class="container">
+                <ul class="list">
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <div class="description">
+                                <div class="text">
+                                    A lot of pickles
+                                    <span>(for the next lessons about CSS)</span>
+                                </div>
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <div class="description">
+                                <div class="text">
+                                    10 apples
+                                    <span>(for more CSS manipulations)</span>
+                                </div>
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <div class="description">
+                                <div class="text">
+                                    20 oranges
+                                    <span>(because they are awesome)</span>
+                                </div>
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <div class="description">
+                                <div class="text">
+                                    13 plates
+                                    <span>(hm... they always dissapear)</span>
+                                </div>
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <div class="description">
+                                <div class="text">
+                                    15 bentos
+                                </div>
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <div class="description">
+                                <div class="text">
+                                    1 bottle of Sake 
+                                    <span> (for my friends)</span>
+                                </div>
+                            </div>
+                        </label>
+                    </li>
+                </ul>
+                <span class="message">Bon appetit :)</span>
+            </div>
+        </section>
     </main>
 </body>
+</html>
